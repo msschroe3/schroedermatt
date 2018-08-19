@@ -3,7 +3,9 @@ import React from 'react'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <span className="icon fa-diamond"></span>
+            <a target="_blank" href="https://linkedin.com/in/matthewschroeder3">
+                <span className="icon fa-linkedin" />
+            </a>
         </div>
         <div className="content">
             <div className="inner">

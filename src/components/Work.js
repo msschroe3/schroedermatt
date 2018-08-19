@@ -1,27 +1,33 @@
 import React from 'react'
-import bulb from '../images/bulb.jpg'
+import opi from '../images/objectpartners.jpg'
+import { Logo as ObjectPartnersLogo } from '@objectpartners/components';
 
-const Work = ({ active, timeout, close }) => (
+const Work = ({ active, timeout, onClose }) => (
     <article id="work" className={`${active ? 'active' : ''} ${timeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Work</h2>
-        <span className="image main"><img src={bulb} alt="" /></span>
+
+        <ObjectPartnersLogo 
+            bgImage={opi}
+            bgDarken={0.5}
+            style={{ height: 'auto', width: 'auto', marginBottom: '15px' }} />
+
         <p>
-            Matt has experience in a wide variety of technologies but specializes 
-            in JVM and Real Time Data technologies such as Kafka.
+            As a consultant for Object Partners, Matt works alongside the top talent in 
+            Minneapolis and Omaha to solve problems for businesses ranging from startups 
+            to Fortune 5 companies.
         </p>
 
         <h3>Technologies</h3>
         <ul>
-            <li>JVM (Java/Groovy/Kotlin)</li>
-            <li>Spock</li>
-            <li>Spring Boot</li>
-            <li>React</li>
-            <li>Jest</li>
-            <li>AWS</li>
-            <li>Kafka</li>
+            <li>JVM (Java/Groovy/Kotlin) development with Spring Boot</li>
+            <li>Scalable cloud applications (AWS, GCP, Azure)</li>
+            <li>Spock testing framework</li>
+            <li>Kafka and other real time data tools</li>
+            <li>React and a variety of front end frameworks</li>
         </ul>
         {/* <p></p> */}
-        {close}
+
+        <div className="close" onClick={() => {onClose()}} />
     </article>
 )
 
