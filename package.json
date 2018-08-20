@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension",
-  "description": "Gatsby Starter - Dimension by HTML5 UP",
+  "name": "schroedermatt",
+  "description": "Personal website for Matt Schroeder, built with Gatsby.",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Matt Schroeder",
   "dependencies": {
     "@objectpartners/components": "~0.0.6",
     "emotion": "^9.2.6",
@@ -22,7 +22,7 @@
     "react-emotion": "^9.2.6",
     "react-ga": "^2.5.3"
   },
-  "homepage": "https://github.com/ChangoMan/gatsby-starter-dimension",
+  "homepage": "https://schroedermatt.com",
   "keywords": [
     "gatsby"
   ],
@@ -30,7 +30,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChangoMan/gatsby-starter-dimension.git"
+    "url": "https://github.com/msschroe3/schroedermatt.git"
   },
   "scripts": {
     "dev": "gatsby develop",
