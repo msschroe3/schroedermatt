@@ -4,7 +4,7 @@ import Social from './Social'
 const Contact = ({ active, timeout, onClose }) => (
     <article id="contact" className={`${active ? 'active' : ''} ${timeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Contact</h2>
-        <form name="contact" method="POST" action="/" netlify>
+        <form name="contact" method="POST" netlify>
             <div className="field half first">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" />
