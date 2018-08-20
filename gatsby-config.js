@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Matt Schroeder",
     author: "Matt Schroeder",
-    description: "A portfolio for Matt Schroeder built with Gatsby.js."
+    description: "A portfolio for Matt Schroeder built with Gatsby.js.",
+    analyticsTrackingId: "UA-124183956-1"
   },
   pathPrefix: '/',
   plugins: [

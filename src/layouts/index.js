@@ -6,6 +6,9 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+// google analytics
+import ReactGA from 'react-ga';
+
 class Template extends React.Component {
   constructor(props) {
     super(props)
@@ -18,6 +21,9 @@ class Template extends React.Component {
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
+
+    const trackingId = props.data.site.siteMetadata.analyticsTrackingId
+    ReactGA.initialize(trackingId);
   }
 
   componentDidMount () {
@@ -33,6 +39,7 @@ class Template extends React.Component {
   }
 
   handleOpenArticle(article) {
+    ReactGA.modalview(article)
 
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
@@ -132,6 +139,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+        analyticsTrackingId
       }
     }
   }

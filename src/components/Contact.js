@@ -1,4 +1,5 @@
 import React from 'react'
+import Social from './Social'
 
 const Contact = ({ active, timeout, onClose }) => (
     <article id="contact" className={`${active ? 'active' : ''} ${timeout ? 'timeout' : ''}`} style={{display:'none'}}>
@@ -21,12 +22,7 @@ const Contact = ({ active, timeout, onClose }) => (
                 <li><input type="reset" value="Reset" /></li>
             </ul>
         </form>
-        <ul className="icons">
-            <li><a href="mailto:matt.schroeder@objectpartners.com" className="icon fa-envelope"><span className="label">Email</span></a></li>
-            <li><a href="https://linkedin.com/in/matthewschroeder3" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/msschroe3" className="icon fa-github"><span className="label">GitHub</span></a></li>
-            <li><a href="https://twitter.com/MattSchroeder_" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-        </ul>
+        <Social />
 
         <div className="close" onClick={() => {onClose()}} />
     </article>

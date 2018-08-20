@@ -19,7 +19,7 @@ const Work = ({ active, timeout, onClose }) => (
 
         <h3>Technologies</h3>
         <ul>
-            <li>JVM (Java/Groovy/Kotlin) development with Spring Boot</li>
+            <li>JVM development with Spring Boot</li>
             <li>Scalable cloud applications (AWS, GCP, Azure)</li>
             <li>Spock testing framework</li>
             <li>Kafka and other real time data tools</li>
