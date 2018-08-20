@@ -25,7 +25,6 @@ const Work = ({ active, timeout, onClose }) => (
             <li>Kafka and other real time data tools</li>
             <li>React and a variety of front end frameworks</li>
         </ul>
-        {/* <p></p> */}
 
         <div className="close" onClick={() => {onClose()}} />
     </article>
