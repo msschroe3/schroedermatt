@@ -1,11 +1,12 @@
 import React from 'react'
+import { OutboundLink } from 'react-ga'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <a target="_blank" href="https://linkedin.com/in/matthewschroeder3">
+            <OutboundLink eventLabel="LinkedIn" to="https://linkedin.com/in/matthewschroeder3" target="_blank">
                 <span className="icon fa-linkedin" />
-            </a>
+            </OutboundLink>
         </div>
         <div className="content">
             <div className="inner">
