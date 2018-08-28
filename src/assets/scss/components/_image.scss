@@ -8,7 +8,6 @@
 
 	.avatar {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
 		width: 100%;
 		
@@ -19,6 +18,12 @@
 			filter: grayscale(1);
 			transition: 175ms ease-in-out;
 			margin-bottom: 15px;
+			margin-right: 15px;
+
+			&.right {
+				margin-right: 0px;
+				margin-left: 15px;
+			}
 		} 
 	}
 
