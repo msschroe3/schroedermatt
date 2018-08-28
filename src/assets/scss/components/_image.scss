@@ -40,6 +40,14 @@
 				}
 			}
 		}
+
+		@include breakpoint(xsmall) {
+			img {
+				&.right {
+					height: 150px;
+				}
+			}
+		}
 	}
 
 	.image {
