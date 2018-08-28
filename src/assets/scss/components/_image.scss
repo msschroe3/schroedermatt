@@ -33,8 +33,10 @@
 		@include breakpoint(small) {
 			display: block;
 			img {
+				margin: 0 auto 15px auto;
 				&.right {
-					margin-left: 0px;
+					height: 175px;
+					margin: 0 auto 15px auto;
 				}
 			}
 		}
