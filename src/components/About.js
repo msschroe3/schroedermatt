@@ -1,5 +1,5 @@
 import React from 'react'
-import my_face from '../images/my_face.png'
+import my_face from '../images/my_face-optimized.png'
 import family from '../images/family.jpg'
 
 const About = ({ active, timeout, onClose }) => (
