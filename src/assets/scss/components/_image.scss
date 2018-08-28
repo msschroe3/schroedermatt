@@ -19,12 +19,25 @@
 			transition: 175ms ease-in-out;
 			margin-bottom: 15px;
 			margin-right: 15px;
-
+			
 			&.right {
 				margin-right: 0px;
 				margin-left: 15px;
 			}
-		} 
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+		
+		@include breakpoint(small) {
+			display: block;
+			img {
+				&.right {
+					margin-left: 0px;
+				}
+			}
+		}
 	}
 
 	.image {
