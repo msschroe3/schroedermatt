@@ -84,6 +84,8 @@ class Template extends React.Component {
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
+    const allMarkdownRemark = this.props.data.allMarkdownRemark
+
     const { location, children } = this.props
 
     let rootPath = `/`
@@ -100,6 +102,7 @@ class Template extends React.Component {
             articleTimeout={this.state.articleTimeout}
             article={this.state.article}
             onCloseArticle={this.handleCloseArticle}
+            allMarkdownRemark={allMarkdownRemark}
           />
           <Footer timeout={this.state.timeout} />
         </div>
@@ -140,6 +143,22 @@ export const pageQuery = graphql`
         title
         description
         analyticsTrackingId
+      }
+    }
+
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            href
+            summary
+          }
+        }
       }
     }
   }

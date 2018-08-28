@@ -1,8 +1,10 @@
 import React from 'react'
 import opi from '../images/objectpartners.jpg'
 import { Logo as ObjectPartnersLogo } from '@objectpartners/components';
+import Publication from './Publication'
+import PublicationList from './PublicationList';
 
-const Work = ({ active, timeout, onClose }) => (
+const Work = ({ active, timeout, onClose, allMarkdownRemark }) => (
     <article id="work" className={`${active ? 'active' : ''} ${timeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Work</h2>
 
@@ -25,6 +27,8 @@ const Work = ({ active, timeout, onClose }) => (
             <li>Kafka and other real time data tools</li>
             <li>React and a variety of front end frameworks</li>
         </ul>
+
+        <PublicationList allMarkdownRemark={allMarkdownRemark} />
 
         <div className="close" onClick={() => {onClose()}} />
     </article>
