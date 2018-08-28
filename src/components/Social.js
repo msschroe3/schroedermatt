@@ -18,11 +18,6 @@ const Social = () => (
                 <span className="label">GitHub</span>
             </OutboundLink>
         </li>
-        <li>
-            <OutboundLink className="icon fa-twitter" eventLabel="Twitter" to="https://twitter.com/MattSchroeder_" target="_blank">
-                <span className="label">Twitter</span>
-            </OutboundLink>
-        </li>
     </ul>
 )
 
