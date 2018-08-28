@@ -12,6 +12,7 @@ export default function PublicationList({ allMarkdownRemark }) {
             .map(({ node: post }) => {
             return (
                 <Publication
+                    key={post.frontmatter.date}
                     title={post.frontmatter.title}
                     href={post.frontmatter.href}
                     date={post.frontmatter.date}
