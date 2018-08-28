@@ -6,7 +6,7 @@
   "dependencies": {
     "@objectpartners/components": "~0.0.6",
     "emotion": "^9.2.6",
-    "gatsby": "^1.9.235",
+    "gatsby": "^1.9.250",
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-catch-links": "^1.0.24",
