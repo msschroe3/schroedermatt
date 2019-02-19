@@ -11,7 +11,7 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Matt Schroeder</h1>
-                <p>Senior Software Consultant at <a href="https://objectpartners.com" target="_blank">Object Partners, Inc.</a></p>
+                <p>Principal Technologist at <a href="https://objectpartners.com" target="_blank">Object Partners, Inc.</a></p>
             </div>
         </div>
         <nav>

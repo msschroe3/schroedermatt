@@ -22,9 +22,9 @@ const Work = ({ active, timeout, onClose, allMarkdownRemark }) => (
         <h3>Technologies</h3>
         <ul>
             <li>JVM development with Spring Boot</li>
+            <li>Kafka and other real time data tools</li>
             <li>Scalable cloud applications (AWS, GCP, Azure)</li>
             <li>Spock testing framework</li>
-            <li>Kafka and other real time data tools</li>
             <li>React and a variety of front end frameworks</li>
         </ul>
 
