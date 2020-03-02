@@ -14,18 +14,21 @@ const Work = ({ active, timeout, onClose, allMarkdownRemark }) => (
             style={{ height: 'auto', width: 'auto', marginBottom: '15px' }} />
 
         <p>
-            As a consultant for Object Partners, Matt works alongside the top talent in 
-            Minneapolis and Omaha to solve problems for businesses ranging from startups 
-            to Fortune 5 companies.
+            Matt is a technical leader in the areas of real-time data, service and API development, team collaboration, and the adoption of new technologies. 
+            He also has experience in the front end and platform engineering spaces.
+        </p>
+        <p>    
+            Matt's professional experience and Master's Degree in Software Engineering have created opportunities for him to make an immediate impact on companies ranging from startups to the largest in the world.
         </p>
 
-        <h3>Technologies</h3>
+        <h3>Specialties</h3>
         <ul>
-            <li>JVM development with Spring Boot</li>
-            <li>Kafka and other real time data tools</li>
-            <li>Scalable cloud applications (AWS, GCP, Azure)</li>
-            <li>Spock testing framework</li>
-            <li>React and a variety of front end frameworks</li>
+            <li>Communication</li>
+            <li>Cloud-native web services (AWS, GCP)</li>
+            <li>Kafka and related data streaming technologies</li>
+            <li>GraphQL and traditional databases</li>
+            <li>User-friendly front ends</li>
+            <li>Infrastructure as Code (Terraform)</li>
         </ul>
 
         <PublicationList allMarkdownRemark={allMarkdownRemark} />
